@@ -11,9 +11,9 @@
         "docker:stop": "docker compose stop",
         "docker:down": "docker compose down",
         "docker:prune": "docker system prune --all && docker system prune --volumes",
-        "up:migrate": "./scripts/upMigrations.sh",
-        "down:migrate": "./scripts/downMigrations.sh",
-        "up:seed": "./scripts/upSeeds.sh"
+        "up:migrations": "./scripts/upMigrations.sh",
+        "down:migrations": "./scripts/downMigrations.sh",
+        "up:seeds": "./scripts/upSeeds.sh"
     },
     "keywords": [
         "knex.js",
