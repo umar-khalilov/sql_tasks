@@ -1,0 +1,9 @@
+/.idea
+/.vscode
+/node_modules/
+/.git
+/db_stuff/
+.gitignore
+README.md
+Dockerfile
+docker-compose.yml

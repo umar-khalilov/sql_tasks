@@ -1,0 +1,35 @@
+{
+    "name": "sql_tasks",
+    "version": "1.0.0",
+    "description": "SQL tasks from jsn ninjas",
+    "main": "./src/index.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "start:dev": "node --watch ./src/index.js",
+        "docker:up": "docker compose up",
+        "docker:stop": "docker compose stop",
+        "docker:down": "docker compose down",
+        "docker:prune": "docker system prune --all && docker system prune --volumes",
+        "up:migrate": "./scripts/upMigrations.sh",
+        "down:migrate": "./scripts/downMigrations.sh",
+        "up:seed": "./scripts/upSeeds.sh"
+    },
+    "keywords": [
+        "knex.js",
+        "postgresql",
+        "node.js",
+        "sql"
+    ],
+    "author": "Umar khalilov",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "knex": "^2.4.2",
+        "pg": "^8.10.0"
+    },
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "prettier": "^2.8.8"
+    }
+}
