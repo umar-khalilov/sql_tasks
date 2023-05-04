@@ -7,7 +7,7 @@ web=$(docker compose --file docker-compose.yml ps | grep server-app | awk '{prin
 # Down Knex's migrations.
 echo "-----> Downing application migrations"
 docker exec -it "$web" npx knex --knexpath ./src/database/knex.js migrate:rollback
-echo "<----- Migrations downed"
+echo "<----- Migrations removed"
 
 ended_at=$(date +"%s")
 

@@ -5,9 +5,9 @@ started_at=$(date +"%s")
 web=$(docker compose --file docker-compose.yml ps | grep server-app | awk '{print $1}')
 
 # Up Knex's seeds.
-echo "-----> Upping application seeds"
+echo "-----> Running application seeds"
 docker exec -it "$web" npx knex --knexpath ./src/database/knex.js seed:run
-echo "<----- Seeds upped"
+echo "<----- Seeds ran"
 
 ended_at=$(date +"%s")
 

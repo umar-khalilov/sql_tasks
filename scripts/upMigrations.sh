@@ -4,7 +4,7 @@ started_at=$(date +"%s")
 
 web=$(docker compose --file docker-compose.yml ps | grep server-app | awk '{print $1}')
 
-# Up Sequelize's migrations.
+# Up Knex's migrations.
 echo "-----> Running application migrations"
 docker exec -it "$web" npx knex --knexpath ./src/database/knex.js migrate:latest
 echo "<----- Migrations created"
