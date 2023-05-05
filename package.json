@@ -2,6 +2,7 @@
     "name": "sql_tasks",
     "version": "1.0.0",
     "description": "SQL tasks from jsn ninjas",
+    "private": true,
     "main": "./src/index.js",
     "type": "commonjs",
     "scripts": {
